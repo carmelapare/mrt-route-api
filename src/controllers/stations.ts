@@ -15,7 +15,7 @@ class Graph {
 	}
 
 	addNode(node: string) {
-		this.nodes.push(node);
+		this.nodes.push(node); 
 		this.adjacencyList.set(node, []);
 	}
 
@@ -73,32 +73,135 @@ class PriorityQueue {
 
 function stationsController() {
     function getAll(res: any) {
-		// map csv file to stations type, import type from model
 		res.send(stations);
     }
 
+	const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	const peakDays = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
+
+	function getSchedule(datetime: string) {
+		let schedule = new Date(datetime)
+		let day = weekdays[schedule.getDay()];
+		
+		// Peak hours (6am-9am and 6pm-9pm on Mon-Fri)
+		if (peakDays.includes(day)) {
+			if ((schedule.getHours() >= 6 && schedule.getHours() <= 9) || 
+			(schedule.getHours() >= 18 && schedule.getHours() <= 21)) {
+				return 'peak'
+			}	
+		}
+		// Night hours (10pm-6am on Mon-Sun)
+		else if (weekdays.includes(day)) {
+			if ((schedule.getHours() >= 22) || (schedule.getHours() >= 0 && schedule.getHours() < 6)) {
+				return 'night'
+			}	
+		}
+		else {
+			return 'normal'
+		}
+
+	}
+	
+	// Peak hours (6am-9am and 6pm-9pm on Mon-Fri)
+	// NS and NE lines take 12 minutes per station
+	// All other train lines take 10 minutes
+	function getPeakInterval(stationCode: string, isLineTransfer: boolean) {
+		if (!isLineTransfer) {
+			if (['NS', 'NE'].includes(stationCode)) {
+				return 12
+			} 
+			return 10
+		}
+		return 15
+	}
+
+	// Night hours (10pm-6am on Mon-Sun)
+	// DT, CG and CE lines do not operate
+	// TE line takes 8 minutes per stop 
+	// All trains take 10 minutes per stop
+	// Every train line change adds 10 minutes of waiting time to the journey
+	function getNightInterval(stationCode: string, isLineTransfer: boolean) {
+		if (!isLineTransfer) {
+			if (['CE','CG','DT'].includes(stationCode)) {
+				return -1
+			}
+			if (stationCode === 'TE') {
+				return 8
+			} 
+		}
+		return 10
+	}
+
+	// Non-Peak hours (all other times)
+	// DT and TE lines take 8 minutes per stop
+	// All trains take 10 minutes per stop
+	// Every train line change adds 10 minutes of waiting time to the journey
+	function getNormalInterval(stationCode: string, isLineTransfer: boolean) {
+		if (!isLineTransfer) {
+			if (['DT', 'NT'].includes(stationCode)) {
+				return 8
+			}
+		}
+		return 10
+	}
+
+	function parseStationCode (stationCode: string) {
+		let strippedCode = stationCode.replace(/[0-9]/g, '');
+		return strippedCode
+	}
+
 	function getStationMap() {
 		let map = new Graph();
-		map.addNode('NS1');
-		map.addNode('NS2');
-		map.addNode('NS3');
-		map.addNode('NS4');
-		map.addNode('NS5');
-		map.addNode('NS6');
-		map.addNode('NS7');
-		map.addNode('NS8');
-		map.addNode('CC1');
-		map.addNode('CC2');
 
-		map.addEdge('NS1', 'NS2', 8);
-		map.addEdge('NS2', 'NS3', 8);
-		map.addEdge('NS3', 'NS4', 8);
-		map.addEdge('NS4', 'NS5', 8);
-		map.addEdge('NS5', 'CC1', 10);
-		map.addEdge('NS5', 'NS6', 8);
-		map.addEdge('NS7', 'NS8', 8);
-		map.addEdge('CC1', 'CC2', 8);
-		map.addEdge('CC2', 'NS8', 10);
+		for (let i=0; i <stations.length; i++) {
+			// If last given station
+			if (i == stations.length-1) {
+				break;
+			}
+			let schedule = getSchedule('2019-01-31T16:00')
+			let currentStation = stations[i]
+			let nextStation = stations[i+1]
+			let currentStationCode = parseStationCode(currentStation.Code)
+			let nextStationCode = parseStationCode(nextStation.Code)
+			let isLineTransfer = (currentStationCode === nextStationCode)
+			let weight
+
+			// Map the weights of each node based on given schedule of MRT line
+			switch(schedule) {
+				case 'peak' : 
+					weight = getPeakInterval(currentStationCode, isLineTransfer)
+					break
+				case 'night': 
+					weight = getNightInterval(currentStationCode, isLineTransfer)
+					break
+				default :
+					weight = getNormalInterval(currentStationCode, isLineTransfer)
+					break
+			}
+			map.addEdge(stations[i].Code, stations[i+1].Code, weight)
+		}
+
+
+		// map.addNode('NS1');
+		// map.addNode('NS2');
+		// map.addNode('NS3');
+		// map.addNode('NS4');
+		// map.addNode('NS5');
+		// map.addNode('NS6');
+		// map.addNode('NS7');
+		// map.addNode('NS8');
+		// map.addNode('CC1');
+		// map.addNode('CC2');
+
+		// map.addEdge('NS1', 'NS2', 8);
+		// map.addEdge('NS2', 'NS3', 8);
+		// map.addEdge('NS3', 'NS4', 8);
+		// map.addEdge('NS4', 'NS5', 8);
+		// map.addEdge('NS5', 'CC1', 10);
+		// map.addEdge('NS5', 'NS6', 8);
+		// map.addEdge('NS7', 'NS8', 8);
+		// map.addEdge('CC1', 'CC2', 8);
+		// map.addEdge('CC2', 'NS8', 10);
 
 		return map;
 	}
@@ -142,8 +245,6 @@ function stationsController() {
 				}
 
 			});
-
-
 
 			// let shortestStep = pq.dequeue();
 			// let currentNode = shortestStep[0];
