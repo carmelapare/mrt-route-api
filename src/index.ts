@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3002;
 
 const app = express();
 
-const stationRouter = require("./routes/stationRouter")();
+const stationRouter = require("./components/Station/route")();
 
 app.use(cors());
 app.use(function(req: any, res: any, next: any) {
