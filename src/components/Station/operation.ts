@@ -208,24 +208,38 @@ export default function findShortestPath(nodeFrom: string, nodeTo: string, sched
         lastStep = backtrace.get(lastStep) ?? '';
     }
 
-    return getResult(path, weights, weights[nodeTo])
+    // Get stations included in the result path
+    let finalStations = stations.filter(s => {
+        return path.includes(s.Code)
+    })
+
+    return getResult(finalStations, weights)
 }
 
-function getResult(path: any, weights: any, time:string) {
+function getResult(routes: Stations, weights: any) {
    let result = []
-   for (let i=0; i<path.length; i++) {
-       let currentStationCode = parseStationCode(path[i])
-       let nextStationCode = parseStationCode(path[i+1])
-       
-        if (i == 0) {
-            result.push(`Take ${currentStationCode} line from ${name1} to ${name2}`)
-        } else {
-            if (currentStationCode === nextStationCode) {
-                result.push(`Change from ${currentStationCode} line to ${nextStationCode} line`)
+   for (let i=0; i<routes.length; i++) {
+       // If last station
+       if (i == routes.length-1) {
+         break;
+       } else {
+           let currentStation = routes[i]
+           let currentStationCode = parseStationCode(currentStation.Code)
+           let nextStation = routes[i+1]
+           let nextStationCode = parseStationCode(nextStation.Code)
+           
+            // If first station, add instruction
+            if (i == 0) {
+                result.push(`Take ${currentStationCode} line from ${currentStation.Name} to ${nextStation.Name}`)
             } else {
-                result.push(`Take ${currentStationCode} line from ${name1} to ${name2}`)
-            }
-        } 
-   }
-   return result
+                // If there's a line change, add instruction containing both lines
+                if (currentStationCode === nextStationCode) {
+                    result.push(`Change from ${currentStationCode} line to ${nextStationCode} line`)
+                } else {
+                    result.push(`Take ${currentStationCode} line from ${currentStation.Name} to ${nextStation.Name}`)
+                }
+            } 
+        }
+    }
+   return routes
 }
