@@ -232,8 +232,8 @@ function getResult(routes: Stations, weights: any) {
             if (i == 0) {
                 result.push(`Take ${currentStationCode} line from ${currentStation.Name} to ${nextStation.Name}`)
             } else {
-                // If there's a line change, add instruction containing both lines
-                if (currentStationCode === nextStationCode) {
+                // If there's a line change, add instruction transferring from current line to next line
+                if (currentStationCode !== nextStationCode) {
                     result.push(`Change from ${currentStationCode} line to ${nextStationCode} line`)
                 } else {
                     result.push(`Take ${currentStationCode} line from ${currentStation.Name} to ${nextStation.Name}`)
