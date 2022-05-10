@@ -1,5 +1,5 @@
 export type Edge = {
-	node: string
+	node: Station
 	weight: number
 }
 
@@ -11,3 +11,4 @@ export type Station =  {
 }
 
 export type Stations = Station[]
+
