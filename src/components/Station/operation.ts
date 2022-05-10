@@ -130,6 +130,7 @@ function getNormalInterval(stationCode: string, isLineTransfer: boolean) {
 
 function getStationMap(stations: Stations, travelSchedule: string) {
     let map = new StationGraph();
+    let schedule = getSchedule(travelSchedule)
 
     // Populate graph with stations
     stations.forEach((s) => map.addNode(s))
@@ -137,7 +138,6 @@ function getStationMap(stations: Stations, travelSchedule: string) {
     // Populate graph with stations and interval
     for (let i = 0; i < stations.length - 1; i++) {
 
-        let schedule = getSchedule(travelSchedule)
         let currentStation = stations[i]
         let currentStationCode = parseStationCode(currentStation.code)
         let nextStation = stations[i + 1]
