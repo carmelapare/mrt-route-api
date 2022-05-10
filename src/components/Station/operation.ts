@@ -272,16 +272,17 @@ function getResult(routes: Stations, weights: Map<string, number>) {
             // If first station, add instruction
             if (i == 0) {
                 result.push(`Take ${currentStationCode} line from ${currentStation.name} to ${nextStation.name}`)
+                path.push(currentStation.code)
             } else {
+                path.push(currentStation.code)
                 // If there's a line change, add instruction transferring from current line to next line
                 if (currentStationCode !== nextStationCode) {
                     result.push(`Change from ${currentStationCode} line to ${nextStationCode} line`)
+                    path.push(nextStation.code)
                 } else {
                     result.push(`Take ${currentStationCode} line from ${currentStation.name} to ${nextStation.name}`)
                 }
             }
-            path.push(currentStation.code)
-            path.push(nextStation.code)
         }
     }
     return {
