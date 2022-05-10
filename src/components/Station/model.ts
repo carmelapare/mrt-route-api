@@ -4,10 +4,10 @@ export type Edge = {
 }
 
 export type Station =  {
-    Code: string
-    Name: string
-    OpeningDate: string
-    Interval?: number 
+    code: string
+    name: string
+    openingDate: string
+    interval?: number 
 }
 
 export type Stations = Station[]

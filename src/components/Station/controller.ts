@@ -5,10 +5,10 @@ import findShortestPath from "../Station/operation"
 function stationsController() {
 
     let stations : Stations = stationList.stations.map((i: Station) => ({
-        Code: i.Code,
-        Name: i.Name,
-        OpeningDate: i.OpeningDate,
-        Interval: undefined
+        code: i.code,
+        name: i.name,
+        openingDate: i.openingDate,
+        interval: undefined
     } as Station))
 
     function getLookup(req: any, res: any) {

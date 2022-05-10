@@ -2,999 +2,999 @@
   "stations" : 
         [
             {
-                "Code": "NS1",
-                "Name": "Jurong East",
-                "OpeningDate": "10-Mar-90",
-                "Interval": -1
+                "code": "NS1",
+                "name": "Jurong East",
+                "openingDate": "10-Mar-90",
+                "interval": -1
             },
             {
-                "Code": "NS2",
-                "Name": "Bukit Batok",
-                "OpeningDate": "10-Mar-90",
-                "Interval": -1
+                "code": "NS2",
+                "name": "Bukit Batok",
+                "openingDate": "10-Mar-90",
+                "interval": -1
             },
             {
-                "Code": "NS3",
-                "Name": "Bukit Gombak",
-                "OpeningDate": "10-Mar-90",
-                "Interval": -1
+                "code": "NS3",
+                "name": "Bukit Gombak",
+                "openingDate": "10-Mar-90",
+                "interval": -1
             },
             {
-                "Code": "NS4",
-                "Name": "Choa Chu Kang",
-                "OpeningDate": "10-Mar-90",
-                "Interval": -1
+                "code": "NS4",
+                "name": "Choa Chu Kang",
+                "openingDate": "10-Mar-90",
+                "interval": -1
             },
             {
-                "Code": "NS5",
-                "Name": "Yew Tee",
-                "OpeningDate": "10-Feb-96",
-                "Interval": -1
+                "code": "NS5",
+                "name": "Yew Tee",
+                "openingDate": "10-Feb-96",
+                "interval": -1
             },
             {
-                "Code": "NS7",
-                "Name": "Kranji",
-                "OpeningDate": "10-Feb-96",
-                "Interval": -1
+                "code": "NS7",
+                "name": "Kranji",
+                "openingDate": "10-Feb-96",
+                "interval": -1
             },
             {
-                "Code": "NS8",
-                "Name": "Marsiling",
-                "OpeningDate": "10-Feb-96",
-                "Interval": -1
+                "code": "NS8",
+                "name": "Marsiling",
+                "openingDate": "10-Feb-96",
+                "interval": -1
             },
             {
-                "Code": "NS9",
-                "Name": "Woodlands",
-                "OpeningDate": "10-Feb-96",
-                "Interval": -1
+                "code": "NS9",
+                "name": "Woodlands",
+                "openingDate": "10-Feb-96",
+                "interval": -1
             },
             {
-                "Code": "NS10",
-                "Name": "Admiralty",
-                "OpeningDate": "10-Feb-96",
-                "Interval": -1
+                "code": "NS10",
+                "name": "Admiralty",
+                "openingDate": "10-Feb-96",
+                "interval": -1
             },
             {
-                "Code": "NS11",
-                "Name": "Sembawang",
-                "OpeningDate": "10-Feb-96",
-                "Interval": -1
+                "code": "NS11",
+                "name": "Sembawang",
+                "openingDate": "10-Feb-96",
+                "interval": -1
             },
             {
-                "Code": "NS12",
-                "Name": "Canberra",
-                "OpeningDate": "Dec-19",
-                "Interval": -1
+                "code": "NS12",
+                "name": "Canberra",
+                "openingDate": "Dec-19",
+                "interval": -1
             },
             {
-                "Code": "NS13",
-                "Name": "Yishun",
-                "OpeningDate": "20-Dec-88",
-                "Interval": -1
+                "code": "NS13",
+                "name": "Yishun",
+                "openingDate": "20-Dec-88",
+                "interval": -1
             },
             {
-                "Code": "NS14",
-                "Name": "Khatib",
-                "OpeningDate": "20-Dec-88",
-                "Interval": -1
+                "code": "NS14",
+                "name": "Khatib",
+                "openingDate": "20-Dec-88",
+                "interval": -1
             },
             {
-                "Code": "NS15",
-                "Name": "Yio Chu Kang",
-                "OpeningDate": "7-Nov-87",
-                "Interval": -1
+                "code": "NS15",
+                "name": "Yio Chu Kang",
+                "openingDate": "7-Nov-87",
+                "interval": -1
             },
             {
-                "Code": "NS16",
-                "Name": "Ang Mo Kio",
-                "OpeningDate": "7-Nov-87",
-                "Interval": -1
+                "code": "NS16",
+                "name": "Ang Mo Kio",
+                "openingDate": "7-Nov-87",
+                "interval": -1
             },
             {
-                "Code": "NS17",
-                "Name": "Bishan",
-                "OpeningDate": "7-Nov-87",
-                "Interval": -1
+                "code": "NS17",
+                "name": "Bishan",
+                "openingDate": "7-Nov-87",
+                "interval": -1
             },
             {
-                "Code": "NS18",
-                "Name": "Braddell",
-                "OpeningDate": "7-Nov-87",
-                "Interval": -1
+                "code": "NS18",
+                "name": "Braddell",
+                "openingDate": "7-Nov-87",
+                "interval": -1
             },
             {
-                "Code": "NS19",
-                "Name": "Toa Payoh",
-                "OpeningDate": "7-Nov-87",
-                "Interval": -1
+                "code": "NS19",
+                "name": "Toa Payoh",
+                "openingDate": "7-Nov-87",
+                "interval": -1
             },
             {
-                "Code": "NS20",
-                "Name": "Novena",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "NS20",
+                "name": "Novena",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "NS21",
-                "Name": "Newton",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "NS21",
+                "name": "Newton",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "NS22",
-                "Name": "Orchard",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "NS22",
+                "name": "Orchard",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "NS23",
-                "Name": "Somerset",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "NS23",
+                "name": "Somerset",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "NS24",
-                "Name": "Dhoby Ghaut",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "NS24",
+                "name": "Dhoby Ghaut",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "NS25",
-                "Name": "City Hall",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "NS25",
+                "name": "City Hall",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "NS26",
-                "Name": "Raffles Place",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "NS26",
+                "name": "Raffles Place",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "NS27",
-                "Name": "Marina Bay",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "NS27",
+                "name": "Marina Bay",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "NS28",
-                "Name": "Marina South Pier",
-                "OpeningDate": "23-Nov-14",
-                "Interval": -1
+                "code": "NS28",
+                "name": "Marina South Pier",
+                "openingDate": "23-Nov-14",
+                "interval": -1
             },
             {
-                "Code": "EW1",
-                "Name": "Pasir Ris",
-                "OpeningDate": "16-Dec-89",
-                "Interval": -1
+                "code": "EW1",
+                "name": "Pasir Ris",
+                "openingDate": "16-Dec-89",
+                "interval": -1
             },
             {
-                "Code": "EW2",
-                "Name": "Tampines",
-                "OpeningDate": "16-Dec-89",
-                "Interval": -1
+                "code": "EW2",
+                "name": "Tampines",
+                "openingDate": "16-Dec-89",
+                "interval": -1
             },
             {
-                "Code": "EW3",
-                "Name": "Simei",
-                "OpeningDate": "16-Dec-89",
-                "Interval": -1
+                "code": "EW3",
+                "name": "Simei",
+                "openingDate": "16-Dec-89",
+                "interval": -1
             },
             {
-                "Code": "EW4",
-                "Name": "Tanah Merah",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW4",
+                "name": "Tanah Merah",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW5",
-                "Name": "Bedok",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW5",
+                "name": "Bedok",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW6",
-                "Name": "Kembangan",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW6",
+                "name": "Kembangan",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW7",
-                "Name": "Eunos",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW7",
+                "name": "Eunos",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW8",
-                "Name": "Paya Lebar",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW8",
+                "name": "Paya Lebar",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW9",
-                "Name": "Aljunied",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW9",
+                "name": "Aljunied",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW10",
-                "Name": "Kallang",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW10",
+                "name": "Kallang",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW11",
-                "Name": "Lavender",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW11",
+                "name": "Lavender",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW12",
-                "Name": "Bugis",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "EW12",
+                "name": "Bugis",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "EW13",
-                "Name": "City Hall",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "EW13",
+                "name": "City Hall",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "EW14",
-                "Name": "Raffles Place",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "EW14",
+                "name": "Raffles Place",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "EW15",
-                "Name": "Tanjong Pagar",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "EW15",
+                "name": "Tanjong Pagar",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "EW16",
-                "Name": "Outram Park",
-                "OpeningDate": "12-Dec-87",
-                "Interval": -1
+                "code": "EW16",
+                "name": "Outram Park",
+                "openingDate": "12-Dec-87",
+                "interval": -1
             },
             {
-                "Code": "EW17",
-                "Name": "Tiong Bahru",
-                "OpeningDate": "12-Mar-88",
-                "Interval": -1
+                "code": "EW17",
+                "name": "Tiong Bahru",
+                "openingDate": "12-Mar-88",
+                "interval": -1
             },
             {
-                "Code": "EW18",
-                "Name": "Redhill",
-                "OpeningDate": "12-Mar-88",
-                "Interval": -1
+                "code": "EW18",
+                "name": "Redhill",
+                "openingDate": "12-Mar-88",
+                "interval": -1
             },
             {
-                "Code": "EW19",
-                "Name": "Queenstown",
-                "OpeningDate": "12-Mar-88",
-                "Interval": -1
+                "code": "EW19",
+                "name": "Queenstown",
+                "openingDate": "12-Mar-88",
+                "interval": -1
             },
             {
-                "Code": "EW20",
-                "Name": "Commonwealth",
-                "OpeningDate": "12-Mar-88",
-                "Interval": -1
+                "code": "EW20",
+                "name": "Commonwealth",
+                "openingDate": "12-Mar-88",
+                "interval": -1
             },
             {
-                "Code": "EW21",
-                "Name": "Buona Vista",
-                "OpeningDate": "12-Mar-88",
-                "Interval": -1
+                "code": "EW21",
+                "name": "Buona Vista",
+                "openingDate": "12-Mar-88",
+                "interval": -1
             },
             {
-                "Code": "EW22",
-                "Name": "Dover",
-                "OpeningDate": "18-Oct-01",
-                "Interval": -1
+                "code": "EW22",
+                "name": "Dover",
+                "openingDate": "18-Oct-01",
+                "interval": -1
             },
             {
-                "Code": "EW23",
-                "Name": "Clementi",
-                "OpeningDate": "12-Mar-88",
-                "Interval": -1
+                "code": "EW23",
+                "name": "Clementi",
+                "openingDate": "12-Mar-88",
+                "interval": -1
             },
             {
-                "Code": "EW24",
-                "Name": "Jurong East",
-                "OpeningDate": "5-Nov-88",
-                "Interval": -1
+                "code": "EW24",
+                "name": "Jurong East",
+                "openingDate": "5-Nov-88",
+                "interval": -1
             },
             {
-                "Code": "EW25",
-                "Name": "Chinese Garden",
-                "OpeningDate": "5-Nov-88",
-                "Interval": -1
+                "code": "EW25",
+                "name": "Chinese Garden",
+                "openingDate": "5-Nov-88",
+                "interval": -1
             },
             {
-                "Code": "EW26",
-                "Name": "Lakeside",
-                "OpeningDate": "5-Nov-88",
-                "Interval": -1
+                "code": "EW26",
+                "name": "Lakeside",
+                "openingDate": "5-Nov-88",
+                "interval": -1
             },
             {
-                "Code": "EW27",
-                "Name": "Boon Lay",
-                "OpeningDate": "6-Jul-90",
-                "Interval": -1
+                "code": "EW27",
+                "name": "Boon Lay",
+                "openingDate": "6-Jul-90",
+                "interval": -1
             },
             {
-                "Code": "EW28",
-                "Name": "Pioneer",
-                "OpeningDate": "28-Feb-09",
-                "Interval": -1
+                "code": "EW28",
+                "name": "Pioneer",
+                "openingDate": "28-Feb-09",
+                "interval": -1
             },
             {
-                "Code": "EW29",
-                "Name": "Joo Koon",
-                "OpeningDate": "28-Feb-09",
-                "Interval": -1
+                "code": "EW29",
+                "name": "Joo Koon",
+                "openingDate": "28-Feb-09",
+                "interval": -1
             },
             {
-                "Code": "EW30",
-                "Name": "Gul Circle",
-                "OpeningDate": "18-Jun-17",
-                "Interval": -1
+                "code": "EW30",
+                "name": "Gul Circle",
+                "openingDate": "18-Jun-17",
+                "interval": -1
             },
             {
-                "Code": "EW31",
-                "Name": "Tuas Crescent",
-                "OpeningDate": "18-Jun-17",
-                "Interval": -1
+                "code": "EW31",
+                "name": "Tuas Crescent",
+                "openingDate": "18-Jun-17",
+                "interval": -1
             },
             {
-                "Code": "EW32",
-                "Name": "Tuas West Road",
-                "OpeningDate": "18-Jun-17",
-                "Interval": -1
+                "code": "EW32",
+                "name": "Tuas West Road",
+                "openingDate": "18-Jun-17",
+                "interval": -1
             },
             {
-                "Code": "EW33",
-                "Name": "Tuas Link",
-                "OpeningDate": "18-Jun-17",
-                "Interval": -1
+                "code": "EW33",
+                "name": "Tuas Link",
+                "openingDate": "18-Jun-17",
+                "interval": -1
             },
             {
-                "Code": "CG0",
-                "Name": "Tanah Merah",
-                "OpeningDate": "4-Nov-89",
-                "Interval": -1
+                "code": "CG0",
+                "name": "Tanah Merah",
+                "openingDate": "4-Nov-89",
+                "interval": -1
             },
             {
-                "Code": "CG1",
-                "Name": "Expo",
-                "OpeningDate": "10-Jan-01",
-                "Interval": -1
+                "code": "CG1",
+                "name": "Expo",
+                "openingDate": "10-Jan-01",
+                "interval": -1
             },
             {
-                "Code": "CG2",
-                "Name": "Changi Airport",
-                "OpeningDate": "8-Feb-02",
-                "Interval": -1
+                "code": "CG2",
+                "name": "Changi Airport",
+                "openingDate": "8-Feb-02",
+                "interval": -1
             },
             {
-                "Code": "NE1",
-                "Name": "HarbourFront",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE1",
+                "name": "HarbourFront",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE3",
-                "Name": "Outram Park",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE3",
+                "name": "Outram Park",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE4",
-                "Name": "Chinatown",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE4",
+                "name": "Chinatown",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE5",
-                "Name": "Clarke Quay",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE5",
+                "name": "Clarke Quay",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE6",
-                "Name": "Dhoby Ghaut",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE6",
+                "name": "Dhoby Ghaut",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE7",
-                "Name": "Little India",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE7",
+                "name": "Little India",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE8",
-                "Name": "Farrer Park",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE8",
+                "name": "Farrer Park",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE9",
-                "Name": "Boon Keng",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE9",
+                "name": "Boon Keng",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE10",
-                "Name": "Potong Pasir",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE10",
+                "name": "Potong Pasir",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE11",
-                "Name": "Woodleigh",
-                "OpeningDate": "20-Jun-11",
-                "Interval": -1
+                "code": "NE11",
+                "name": "Woodleigh",
+                "openingDate": "20-Jun-11",
+                "interval": -1
             },
             {
-                "Code": "NE12",
-                "Name": "Serangoon",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE12",
+                "name": "Serangoon",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE13",
-                "Name": "Kovan",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE13",
+                "name": "Kovan",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE14",
-                "Name": "Hougang",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE14",
+                "name": "Hougang",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE15",
-                "Name": "Buangkok",
-                "OpeningDate": "15-Jan-06"
+                "code": "NE15",
+                "name": "Buangkok",
+                "openingDate": "15-Jan-06"
             },
             {
-                "Code": "NE16",
-                "Name": "Sengkang",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE16",
+                "name": "Sengkang",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "NE17",
-                "Name": "Punggol",
-                "OpeningDate": "20-Jun-03",
-                "Interval": -1
+                "code": "NE17",
+                "name": "Punggol",
+                "openingDate": "20-Jun-03",
+                "interval": -1
             },
             {
-                "Code": "CC1",
-                "Name": "Dhoby Ghaut",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC1",
+                "name": "Dhoby Ghaut",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC2",
-                "Name": "Bras Basah",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC2",
+                "name": "Bras Basah",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC3",
-                "Name": "Esplanade",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC3",
+                "name": "Esplanade",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC4",
-                "Name": "Promenade",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC4",
+                "name": "Promenade",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC5",
-                "Name": "Nicoll Highway",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC5",
+                "name": "Nicoll Highway",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC6",
-                "Name": "Stadium",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC6",
+                "name": "Stadium",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC7",
-                "Name": "Mountbatten",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC7",
+                "name": "Mountbatten",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC8",
-                "Name": "Dakota",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC8",
+                "name": "Dakota",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC9",
-                "Name": "Paya Lebar",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC9",
+                "name": "Paya Lebar",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC10",
-                "Name": "MacPherson",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC10",
+                "name": "MacPherson",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC11",
-                "Name": "Tai Seng",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CC11",
+                "name": "Tai Seng",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CC12",
-                "Name": "Bartley",
-                "OpeningDate": "28-May-09",
-                "Interval": -1
+                "code": "CC12",
+                "name": "Bartley",
+                "openingDate": "28-May-09",
+                "interval": -1
             },
             {
-                "Code": "CC13",
-                "Name": "Serangoon",
-                "OpeningDate": "28-May-09",
-                "Interval": -1
+                "code": "CC13",
+                "name": "Serangoon",
+                "openingDate": "28-May-09",
+                "interval": -1
             },
             {
-                "Code": "CC14",
-                "Name": "Lorong Chuan",
-                "OpeningDate": "28-May-09",
-                "Interval": -1
+                "code": "CC14",
+                "name": "Lorong Chuan",
+                "openingDate": "28-May-09",
+                "interval": -1
             },
             {
-                "Code": "CC15",
-                "Name": "Bishan",
-                "OpeningDate": "28-May-09",
-                "Interval": -1
+                "code": "CC15",
+                "name": "Bishan",
+                "openingDate": "28-May-09",
+                "interval": -1
             },
             {
-                "Code": "CC16",
-                "Name": "Marymount",
-                "OpeningDate": "28-May-09",
-                "Interval": -1
+                "code": "CC16",
+                "name": "Marymount",
+                "openingDate": "28-May-09",
+                "interval": -1
             },
             {
-                "Code": "CC17",
-                "Name": "Caldecott",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC17",
+                "name": "Caldecott",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC19",
-                "Name": "Botanic Gardens",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC19",
+                "name": "Botanic Gardens",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC20",
-                "Name": "Farrer Road",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC20",
+                "name": "Farrer Road",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC21",
-                "Name": "Holland Village",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC21",
+                "name": "Holland Village",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC22",
-                "Name": "Buona Vista",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC22",
+                "name": "Buona Vista",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC23",
-                "Name": "one-north",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC23",
+                "name": "one-north",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC24",
-                "Name": "Kent Ridge",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC24",
+                "name": "Kent Ridge",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC25",
-                "Name": "Haw Par Villa",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC25",
+                "name": "Haw Par Villa",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC26",
-                "Name": "Pasir Panjang",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC26",
+                "name": "Pasir Panjang",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC27",
-                "Name": "Labrador Park",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC27",
+                "name": "Labrador Park",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC28",
-                "Name": "Telok Blangah",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC28",
+                "name": "Telok Blangah",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CC29",
-                "Name": "HarbourFront",
-                "OpeningDate": "8-Oct-11",
-                "Interval": -1
+                "code": "CC29",
+                "name": "HarbourFront",
+                "openingDate": "8-Oct-11",
+                "interval": -1
             },
             {
-                "Code": "CE0",
-                "Name": "Promenade",
-                "OpeningDate": "17-Apr-10",
-                "Interval": -1
+                "code": "CE0",
+                "name": "Promenade",
+                "openingDate": "17-Apr-10",
+                "interval": -1
             },
             {
-                "Code": "CE1",
-                "Name": "Bayfront",
-                "OpeningDate": "14-Jan-12",
-                "Interval": -1
+                "code": "CE1",
+                "name": "Bayfront",
+                "openingDate": "14-Jan-12",
+                "interval": -1
             },
             {
-                "Code": "CE2",
-                "Name": "Marina Bay",
-                "OpeningDate": "14-Jan-12",
-                "Interval": -1
+                "code": "CE2",
+                "name": "Marina Bay",
+                "openingDate": "14-Jan-12",
+                "interval": -1
             },
             {
-                "Code": "DT1",
-                "Name": "Bukit Panjang",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT1",
+                "name": "Bukit Panjang",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT2",
-                "Name": "Cashew",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT2",
+                "name": "Cashew",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT3",
-                "Name": "Hillview",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT3",
+                "name": "Hillview",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT5",
-                "Name": "Beauty World",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT5",
+                "name": "Beauty World",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT6",
-                "Name": "King Albert Park",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT6",
+                "name": "King Albert Park",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT7",
-                "Name": "Sixth Avenue",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT7",
+                "name": "Sixth Avenue",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT8",
-                "Name": "Tan Kah Kee",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT8",
+                "name": "Tan Kah Kee",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT9",
-                "Name": "Botanic Gardens",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT9",
+                "name": "Botanic Gardens",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT10",
-                "Name": "Stevens",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT10",
+                "name": "Stevens",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT11",
-                "Name": "Newton",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT11",
+                "name": "Newton",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT12",
-                "Name": "Little India",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT12",
+                "name": "Little India",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT13",
-                "Name": "Rochor",
-                "OpeningDate": "27-Dec-15",
-                "Interval": -1
+                "code": "DT13",
+                "name": "Rochor",
+                "openingDate": "27-Dec-15",
+                "interval": -1
             },
             {
-                "Code": "DT14",
-                "Name": "Bugis",
-                "OpeningDate": "22-Dec-13",
-                "Interval": -1
+                "code": "DT14",
+                "name": "Bugis",
+                "openingDate": "22-Dec-13",
+                "interval": -1
             },
             {
-                "Code": "DT15",
-                "Name": "Promenade",
-                "OpeningDate": "22-Dec-13",
-                "Interval": -1
+                "code": "DT15",
+                "name": "Promenade",
+                "openingDate": "22-Dec-13",
+                "interval": -1
             },
             {
-                "Code": "DT16",
-                "Name": "Bayfront",
-                "OpeningDate": "22-Dec-13",
-                "Interval": -1
+                "code": "DT16",
+                "name": "Bayfront",
+                "openingDate": "22-Dec-13",
+                "interval": -1
             },
             {
-                "Code": "DT17",
-                "Name": "Downtown",
-                "OpeningDate": "22-Dec-13",
-                "Interval": -1
+                "code": "DT17",
+                "name": "Downtown",
+                "openingDate": "22-Dec-13",
+                "interval": -1
             },
             {
-                "Code": "DT18",
-                "Name": "Telok Ayer",
-                "OpeningDate": "22-Dec-13",
-                "Interval": -1
+                "code": "DT18",
+                "name": "Telok Ayer",
+                "openingDate": "22-Dec-13",
+                "interval": -1
             },
             {
-                "Code": "DT19",
-                "Name": "Chinatown",
-                "OpeningDate": "22-Dec-13",
-                "Interval": -1
+                "code": "DT19",
+                "name": "Chinatown",
+                "openingDate": "22-Dec-13",
+                "interval": -1
             },
             {
-                "Code": "DT20",
-                "Name": "Fort Canning",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT20",
+                "name": "Fort Canning",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT21",
-                "Name": "Bencoolen",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT21",
+                "name": "Bencoolen",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT22",
-                "Name": "Jalan Besar",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT22",
+                "name": "Jalan Besar",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT23",
-                "Name": "Bendemeer",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT23",
+                "name": "Bendemeer",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT24",
-                "Name": "Geylang Bahru",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT24",
+                "name": "Geylang Bahru",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT25",
-                "Name": "Mattar",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT25",
+                "name": "Mattar",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT26",
-                "Name": "MacPherson",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT26",
+                "name": "MacPherson",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT27",
-                "Name": "Ubi",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT27",
+                "name": "Ubi",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT28",
-                "Name": "Kaki Bukit",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT28",
+                "name": "Kaki Bukit",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT29",
-                "Name": "Bedok North",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT29",
+                "name": "Bedok North",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT30",
-                "Name": "Bedok Reservoir",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT30",
+                "name": "Bedok Reservoir",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT31",
-                "Name": "Tampines West",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT31",
+                "name": "Tampines West",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT32",
-                "Name": "Tampines",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT32",
+                "name": "Tampines",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT33",
-                "Name": "Tampines East",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT33",
+                "name": "Tampines East",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT34",
-                "Name": "Upper Changi",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT34",
+                "name": "Upper Changi",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "DT35",
-                "Name": "Expo",
-                "OpeningDate": "21-Oct-17",
-                "Interval": -1
+                "code": "DT35",
+                "name": "Expo",
+                "openingDate": "21-Oct-17",
+                "interval": -1
             },
             {
-                "Code": "TE1",
-                "Name": "Woodlands North",
-                "OpeningDate": "31-Dec-19",
-                "Interval": -1
+                "code": "TE1",
+                "name": "Woodlands North",
+                "openingDate": "31-Dec-19",
+                "interval": -1
             },
             {
-                "Code": "TE2",
-                "Name": "Woodlands",
-                "OpeningDate": "31-Dec-19",
-                "Interval": -1
+                "code": "TE2",
+                "name": "Woodlands",
+                "openingDate": "31-Dec-19",
+                "interval": -1
             },
             {
-                "Code": "TE3",
-                "Name": "Woodlands South",
-                "OpeningDate": "31-Dec-19",
-                "Interval": -1
+                "code": "TE3",
+                "name": "Woodlands South",
+                "openingDate": "31-Dec-19",
+                "interval": -1
             },
             {
-                "Code": "TE4",
-                "Name": "Springleaf",
-                "OpeningDate": "31-Dec-20",
-                "Interval": -1
+                "code": "TE4",
+                "name": "Springleaf",
+                "openingDate": "31-Dec-20",
+                "interval": -1
             },
             {
-                "Code": "TE5",
-                "Name": "Lentor",
-                "OpeningDate": "31-Dec-20",
-                "Interval": -1
+                "code": "TE5",
+                "name": "Lentor",
+                "openingDate": "31-Dec-20",
+                "interval": -1
             },
             {
-                "Code": "TE6",
-                "Name": "Mayflower",
-                "OpeningDate": "31-Dec-20",
-                "Interval": -1
+                "code": "TE6",
+                "name": "Mayflower",
+                "openingDate": "31-Dec-20",
+                "interval": -1
             },
             {
-                "Code": "TE7",
-                "Name": "Bright Hill",
-                "OpeningDate": "31-Dec-20",
-                "Interval": -1
+                "code": "TE7",
+                "name": "Bright Hill",
+                "openingDate": "31-Dec-20",
+                "interval": -1
             },
             {
-                "Code": "TE8",
-                "Name": "Upper Thomson",
-                "OpeningDate": "31-Dec-20",
-                "Interval": -1
+                "code": "TE8",
+                "name": "Upper Thomson",
+                "openingDate": "31-Dec-20",
+                "interval": -1
             },
             {
-                "Code": "TE9",
-                "Name": "Caldecott",
-                "OpeningDate": "31-Dec-20",
-                "Interval": -1
+                "code": "TE9",
+                "name": "Caldecott",
+                "openingDate": "31-Dec-20",
+                "interval": -1
             },
             {
-                "Code": "TE10",
-                "Name": "Mount Pleasant",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE10",
+                "name": "Mount Pleasant",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE11",
-                "Name": "Stevens",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE11",
+                "name": "Stevens",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE12",
-                "Name": "Napier",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE12",
+                "name": "Napier",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE13",
-                "Name": "Orchard Boulevard",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE13",
+                "name": "Orchard Boulevard",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE14",
-                "Name": "Orchard",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE14",
+                "name": "Orchard",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE15",
-                "Name": "Great World",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE15",
+                "name": "Great World",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE16",
-                "Name": "Havelock",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE16",
+                "name": "Havelock",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE17",
-                "Name": "Outram Park",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE17",
+                "name": "Outram Park",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE18",
-                "Name": "Maxwell",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE18",
+                "name": "Maxwell",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE19",
-                "Name": "Shenton Way",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE19",
+                "name": "Shenton Way",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE20",
-                "Name": "Marina Bay",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE20",
+                "name": "Marina Bay",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE21",
-                "Name": "Marina South",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE21",
+                "name": "Marina South",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             },
             {
-                "Code": "TE22",
-                "Name": "Gardens by the Bay",
-                "OpeningDate": "31-Dec-21",
-                "Interval": -1
+                "code": "TE22",
+                "name": "Gardens by the Bay",
+                "openingDate": "31-Dec-21",
+                "interval": -1
             }
         ]
 }

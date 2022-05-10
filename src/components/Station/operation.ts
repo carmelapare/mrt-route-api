@@ -11,12 +11,12 @@ class StationGraph {
 
     addNode(node: Station) {
         this.nodes.push(node);
-        this.adjacencyList.set(node.Code, []);
+        this.adjacencyList.set(node.code, []);
     }
 
     addEdge(nodeFrom: Station, nodeTo: Station, weight: number) {
-        this.adjacencyList.get(nodeFrom.Code)?.push({ node: nodeTo, weight: weight });
-        this.adjacencyList.get(nodeTo.Code)?.push({ node: nodeFrom, weight: weight });
+        this.adjacencyList.get(nodeFrom.code)?.push({ node: nodeTo, weight: weight });
+        this.adjacencyList.get(nodeTo.code)?.push({ node: nodeFrom, weight: weight });
     }
 }
 
@@ -54,6 +54,8 @@ class PriorityQueue {
         return this.collection.length == 0;
     }
 }
+
+/** Compute the schedule of MRT lines */
 
 const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const peakDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
@@ -124,12 +126,9 @@ function getNormalInterval(stationCode: string, isLineTransfer: boolean) {
     return 10
 }
 
-function parseStationCode(stationCode: string) {
-    let strippedCode = stationCode.replace(/[0-9]/g, '');
-    return strippedCode
-}
+/** Form the graph: add the nodes, connect the edges and add the weights */
 
-function getStationMap(stations: Stations, schedule: string) {
+function getStationMap(stations: Stations, travelSchedule: string) {
     let map = new StationGraph();
 
     // Populate graph with stations
@@ -138,12 +137,11 @@ function getStationMap(stations: Stations, schedule: string) {
     // Populate graph with stations and interval
     for (let i = 0; i < stations.length - 1; i++) {
 
-        let schedule = getSchedule('2019-01-31T16:00')
+        let schedule = getSchedule(travelSchedule)
         let currentStation = stations[i]
-        let currentStationCode = parseStationCode(currentStation.Code)
+        let currentStationCode = parseStationCode(currentStation.code)
         let nextStation = stations[i + 1]
-        let nextStationCode = parseStationCode(nextStation.Code)
-        //let isLineTransfer = (currentStationCode !== nextStationCode)
+        let nextStationCode = parseStationCode(nextStation.code)
         let isSameLine = (currentStationCode === nextStationCode);
         let weight;
 
@@ -164,12 +162,12 @@ function getStationMap(stations: Stations, schedule: string) {
             map.addEdge(stations[i], stations[i + 1], weight);
     }
 
-    //for mapping transfer of lines within same station
-    const uniqueStationNames = stations.map(s => s.Name).filter(onlyUnique);
+    // For mapping transfer of lines within same station
+    const uniqueStationNames = stations.map(s => s.name).filter(onlyUnique);
 
     for (let i = 0; i < uniqueStationNames.length; i++) {
         const currentStationName = uniqueStationNames[i];
-        const transferStations = stations.filter(s => s.Name == currentStationName);
+        const transferStations = stations.filter(s => s.name == currentStationName);
         if (transferStations.length > 1) { //more than self
             for (let j = 0; j < transferStations.length - 1; j++) {
                 const currStation = transferStations[j];
@@ -178,13 +176,13 @@ function getStationMap(stations: Stations, schedule: string) {
                     let weight;
                     switch (schedule) {
                         case 'peak':
-                            weight = getPeakInterval(currStation.Code, true);
+                            weight = getPeakInterval(currStation.code, true);
                             break;
                         case 'night':
-                            weight = getNightInterval(currStation.Code, true);
+                            weight = getNightInterval(currStation.code, true);
                             break;
                         default:
-                            weight = getNormalInterval(currStation.Code, true);
+                            weight = getNormalInterval(currStation.code, true);
                             break;
                     }
                     map.addEdge(currStation, nextStation, weight);
@@ -196,15 +194,21 @@ function getStationMap(stations: Stations, schedule: string) {
     return map;
 }
 
+function parseStationCode(stationCode: string) {
+    let strippedCode = stationCode.replace(/[0-9]/g, '');
+    return strippedCode
+}
 
 function onlyUnique(value: string, index: number, self: any) {
     return self.indexOf(value) === index;
 }
 
+/** Find the shortest path based on graph*/
+
 export default function findShortestPath(nodeFromCode: string, nodeToCode: string, schedule: string, stations: Stations) {
 
-    const nodeFrom: Station = stations.find(s => s.Code == nodeFromCode) || stations[0];
-    const nodeTo: Station = stations.find(s => s.Code == nodeToCode) || stations[0];
+    const nodeFrom: Station = stations.find(s => s.code == nodeFromCode) || stations[0];
+    const nodeTo: Station = stations.find(s => s.code == nodeToCode) || stations[0];
 
     var map: StationGraph = getStationMap(stations, schedule)
 
@@ -216,8 +220,8 @@ export default function findShortestPath(nodeFromCode: string, nodeToCode: strin
     weights.set(nodeFromCode, 0);
 
     map.nodes.forEach(node => {
-        if (node.Code != nodeFromCode)
-            weights.set(node.Code, Infinity);
+        if (node.code != nodeFromCode)
+            weights.set(node.code, Infinity);
     });
 
     pq.enqueue({ node: nodeFrom, weight: 0 });
@@ -225,13 +229,13 @@ export default function findShortestPath(nodeFromCode: string, nodeToCode: strin
     while (!pq.isEmpty()) {
         let shortestStep = pq.dequeue();
         let currentNode = shortestStep?.node ?? nodeFrom;
-        map.adjacencyList.get(currentNode.Code)?.forEach(adjacent => {
-            const currentWeight = weights.get(currentNode.Code) ?? 0;
+        map.adjacencyList.get(currentNode.code)?.forEach(adjacent => {
+            const currentWeight = weights.get(currentNode.code) ?? 0;
 
             let totalweight = currentWeight + adjacent.weight;
-            if (totalweight < (weights.get(adjacent.node.Code) ?? 0)) {
-                weights.set(adjacent.node.Code, totalweight);
-                backtrace.set(adjacent.node.Code, currentNode);
+            if (totalweight < (weights.get(adjacent.node.code) ?? 0)) {
+                weights.set(adjacent.node.code, totalweight);
+                backtrace.set(adjacent.node.code, currentNode);
                 pq.enqueue({ node: adjacent.node, weight: totalweight });
             }
 
@@ -242,16 +246,18 @@ export default function findShortestPath(nodeFromCode: string, nodeToCode: strin
     let lastStep = nodeToCode;
     while (lastStep !== nodeFromCode) {
         path.unshift(backtrace.get(lastStep) ?? nodeTo);
-        lastStep = backtrace.get(lastStep)?.Code ?? '';
+        lastStep = backtrace.get(lastStep)?.code ?? '';
     }
 
     // Get stations included in the result path
-
-    return getResult(path, weights)
+    let result = getResult(path, weights)
+    return result
 }
 
-function getResult(routes: Stations, weights: any) {
-    let result = [];
+// Form the instructions
+function getResult(routes: Stations, weights: Map<string, number>) {
+    let result = []
+    let path = []
 
     for (let i = 0; i < routes.length; i++) {
         // If last station
@@ -259,22 +265,29 @@ function getResult(routes: Stations, weights: any) {
             break;
         } else {
             let currentStation = routes[i]
-            let currentStationCode = parseStationCode(currentStation.Code)
+            let currentStationCode = parseStationCode(currentStation.code)
             let nextStation = routes[i + 1]
-            let nextStationCode = parseStationCode(nextStation.Code)
+            let nextStationCode = parseStationCode(nextStation.code)
 
             // If first station, add instruction
             if (i == 0) {
-                result.push(`Take ${currentStationCode} line from ${currentStation.Name} to ${nextStation.Name}`)
+                result.push(`Take ${currentStationCode} line from ${currentStation.name} to ${nextStation.name}`)
             } else {
                 // If there's a line change, add instruction transferring from current line to next line
                 if (currentStationCode !== nextStationCode) {
                     result.push(`Change from ${currentStationCode} line to ${nextStationCode} line`)
                 } else {
-                    result.push(`Take ${currentStationCode} line from ${currentStation.Name} to ${nextStation.Name}`)
+                    result.push(`Take ${currentStationCode} line from ${currentStation.name} to ${nextStation.name}`)
                 }
             }
+            path.push(currentStation.code)
+            path.push(nextStation.code)
         }
     }
-    return result;
+    return {
+        'instructions' : result,
+        'routes' : path,
+        'steps': result.length,
+        'travelTime': weights 
+    }
 }
