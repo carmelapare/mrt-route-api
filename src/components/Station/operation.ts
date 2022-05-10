@@ -288,6 +288,6 @@ function getResult(routes: Stations, weights: Map<string, number>) {
         'instructions' : result,
         'routes' : path,
         'steps': result.length,
-        'travelTime': weights 
+        'travelTime': `${weights.get(path[path.length-1])} mins`
     }
 }
