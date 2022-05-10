@@ -11,4 +11,3 @@ export type Station =  {
 }
 
 export type Stations = Station[]
-

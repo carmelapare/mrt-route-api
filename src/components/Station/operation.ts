@@ -276,6 +276,5 @@ function getResult(routes: Stations, weights: any) {
             }
         }
     }
-
     return result;
 }
