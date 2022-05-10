@@ -1,11 +1,13 @@
 # mrt-route-api
 
 ## Install application packages
-npm install 
+node version : v17.5.0
+npm version: 8.4.1
+Run `npm install`
 
 ## Run the application
-npm run build
-npm start
+Run `npm run build`
+Run `npm start`
 
 ## Access the API results
 Go to url: 
