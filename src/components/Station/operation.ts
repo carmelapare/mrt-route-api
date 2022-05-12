@@ -1,4 +1,4 @@
-import { Edge, Station, Stations } from "./model";
+import { Edge, ShortestPath, Station, Stations } from "./model";
 
 class StationGraph {
     nodes: Stations;
@@ -250,7 +250,7 @@ export default function findShortestPath(nodeFromCode: string, nodeToCode: strin
     }
 
     // Get stations included in the result path
-    let result = getResult(path, weights)
+    let result: ShortestPath = getResult(path, weights)
     return result
 }
 
@@ -260,35 +260,37 @@ function getResult(routes: Stations, weights: Map<string, number>) {
     let path = []
 
     for (let i = 0; i < routes.length; i++) {
-        // If last station
+        let currentStation = routes[i]
+        let currentStationCode = parseStationCode(currentStation.code)
+        // If last station, add station to route
         if (i == routes.length - 1) {
-            break;
+            path.push(currentStation.code)
         } else {
-            let currentStation = routes[i]
-            let currentStationCode = parseStationCode(currentStation.code)
             let nextStation = routes[i + 1]
             let nextStationCode = parseStationCode(nextStation.code)
-
             // If first station, add instruction
             if (i == 0) {
                 result.push(`Take ${currentStationCode} line from ${currentStation.name} to ${nextStation.name}`)
                 path.push(currentStation.code)
             } else {
-                path.push(currentStation.code)
                 // If there's a line change, add instruction transferring from current line to next line
                 if (currentStationCode !== nextStationCode) {
                     result.push(`Change from ${currentStationCode} line to ${nextStationCode} line`)
-                    path.push(nextStation.code)
                 } else {
                     result.push(`Take ${currentStationCode} line from ${currentStation.name} to ${nextStation.name}`)
+                    // Same line but different stations
+                    if (currentStation.code !== nextStation.code) {
+                        path.push(currentStation.code)
+                    }
                 }
             }
         }
     }
     return {
         'instructions' : result,
-        'routes' : path,
+        'route' : path,
         'steps': result.length,
-        'travelTime': `${weights.get(path[path.length-1])} mins`
+        'stationsTraveled' : path.length,
+        'travelTime': (weights && path &&  weights.get(path[path.length-1])) ??  0
     }
 }

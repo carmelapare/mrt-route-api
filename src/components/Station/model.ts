@@ -10,4 +10,12 @@ export type Station =  {
     interval?: number 
 }
 
+export type ShortestPath =  {
+    instructions : string[],
+    route : string[],
+    steps: number,
+    stationsTraveled : number,
+    travelTime: number
+}
+
 export type Stations = Station[]
